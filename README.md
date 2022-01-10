@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Comenzando 🚀
 
-1.Clona este proyecto.
-2.Ve a la carpeta del proyecto `cd portafolio`
-3.Instala las dependencias `npm install`
+1.Clona este proyecto.\
+2.Ve a la carpeta del proyecto `cd portafolio`\
+3.Instala las dependencias `npm install`\
 4.Corre el ambiente local `npm start`
 
 [Demo](https://portafolio-lucas-cabral.netlify.app)
