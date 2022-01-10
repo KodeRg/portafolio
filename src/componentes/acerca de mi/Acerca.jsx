@@ -1,4 +1,5 @@
 import "./Acerca.scss"
+import pdf from './LucasCabral-cv.pdf'
 
 export default function Acerca() {
     return (
@@ -12,7 +13,7 @@ export default function Acerca() {
                     Me gusta compartir con personas y tengo muchas ganas de unirme a un grupo de trabajo para poder aportar valor, y seguir aprendiendo.
                     Soy ansioso y entusiasta. Asi que, probablemente, en este momento esté esperando tu propuesta!
                 </p>
-                <a className="btn-cv" href="./LucasCabral-cv.pdf" target="_blank">Mirá mi CV!</a>
+                <a className="btn-cv" href={pdf} target="_blank">Mirá mi CV!</a>
                 </div>
             </div>
         </div>
