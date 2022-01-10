@@ -1,0 +1,104 @@
+@import "../../globales.scss";
+
+.menu{
+        background-color: $colorPrimario;
+        position: fixed;
+        top: 0;
+        right: -30%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transition: all 1s ease;
+        padding-top: 5%;
+        width: 30%;
+        height: 100vh;
+
+    @include mobile{
+        right: 0;
+        width: 100%;
+        top: -100%;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+    }
+    @include mobile1{
+        height: 35%;
+    }
+
+    &.active{
+        right: 0%;
+        width: 30%;
+        @include mobile{
+            right: 0%;
+            top: 25px;
+            width: 100%;
+            height: 35%;
+        }
+        @include mobile1{
+            height: 60%;
+            padding-top: 0;
+            top: 5%;
+            overflow: hidden;
+        }
+        @include mobile2{
+            height: 35%;
+            top: 35px;
+        }
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        width: 60%;
+        padding-left: 15%;
+
+        @include mobile{
+            font-size: 30px;
+            font-weight: 500;
+            margin: 0 auto;
+            padding-left: 0px;
+        }
+        @include mobile1{
+            padding-top: 15px;
+            text-align: inherit;
+        }
+        @include mobile2{
+            padding-top: 0;
+        }
+
+        li{
+            margin-bottom: 25px;
+            @include mobile{
+                margin-bottom: 5px;
+            }
+            @include mobile1{
+                margin-bottom: 25px;
+            }
+            @include mobile2{
+                margin-bottom: 20px;
+            }
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+                @include mobile{
+                    font-size: 25px;
+                }
+                @include mobile1{
+                    font-size: 45px;
+                }
+            }
+
+            &:hover{
+                color: crimson;
+            }
+        }
+    }
+}

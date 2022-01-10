@@ -1,0 +1,88 @@
+@import "../../globales.scss";
+
+.contacto{
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    .izquierda{
+        flex: 1;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+
+        }
+    }
+    .derecha{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 30px;
+        }
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            label{
+                overflow: hidden;
+                padding: 10px;
+            }
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 20px;
+                }
+
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+                margin-bottom: 10px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 100px;
+                }
+
+            }
+
+            button{
+                width: 310px;
+                height: 40px;
+                color: white;
+                background-color: crimson;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                color: green;
+            }
+        }
+    }
+}

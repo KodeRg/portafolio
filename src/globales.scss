@@ -1,0 +1,21 @@
+$colorPrimario: #15023a;
+
+$width: 768px;
+$width1: 375px;
+
+
+@mixin mobile{
+    @media (max-width: #{$width}) {
+          @content
+    }
+}
+@mixin mobile1{
+    @media(width: $width){
+        @content
+    }
+}
+@mixin mobile2{
+    @media(width: $width1){
+        @content
+    }
+}

@@ -1,0 +1,96 @@
+ @import "../../globales.scss";
+.proyecto{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mobile{
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    @include mobile{
+      font-size: 40px;
+      padding: 10px;
+    }
+  }
+
+  .container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 10px auto;
+
+    @include mobile{
+      width: 85%;
+    }
+
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid rgb(240, 239, 239);
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      transition: all .5s ease;
+      cursor: pointer;
+      flex-direction: column;
+
+      @include mobile{
+        width: 130px;
+        height: 100px;
+      }
+      a{
+        display: none;
+      }
+      p{
+        display: inline-block;
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &:hover {
+         background-color: $colorPrimario;
+
+        a{
+          overflow: hidden;
+          text-decoration: none;
+          padding: 15px;
+          color: crimson;
+          display: inline-block;
+          background-color: white;
+          width: 100%;
+          text-align: center;
+          font-weight: 900;
+        }
+         img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
